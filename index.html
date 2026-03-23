@@ -1,63 +1,62 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Cavaleiro da Lua</title>
+    <title>Cavaleiro da Lua - O Punho de Khonshu</title>
     <style>
-        /* CSS - O Desafio Hardcore */
         body {
-            background-color: #0a0e14; /* Cor de fundo escura */
+            background-color: #0a0e14;
             color: #e0e0e0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Alterar fonte */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 50px;
+            padding: 20px;
+            line-height: 1.6;
         }
 
-        h1 {
-            color: #ffffff;
-            text-align: center; /* Centralizar texto */
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            text-shadow: 0 0 15px #fff;
+        .container { max-width: 800px; text-align: center; }
+
+        h1, h2 { 
+            color: #ffffff; 
+            text-transform: uppercase; 
+            letter-spacing: 3px; 
+            text-shadow: 0 0 10px #fff;
         }
 
-        .container {
-            max-width: 600px;
-            text-align: center;
+        .card {
+            background: #161b22;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #fff;
+            text-align: left;
         }
 
         img {
             width: 100%;
-            border-radius: 10px;
-            margin: 20px 0;
-            border: 2px solid #333;
+            max-width: 400px;
+            border-radius: 8px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(255,255,255,0.1);
         }
 
-        ul {
-            text-align: left;
-            display: inline-block;
-        }
-
-        /* Botão com Hover */
         .btn-moon {
             display: inline-block;
-            padding: 15px 30px;
-            margin-top: 20px;
+            padding: 12px 25px;
             background-color: #fff;
             color: #000;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 50px;
+            border-radius: 5px;
             transition: 0.3s;
         }
 
         .btn-moon:hover {
             background-color: #3498db;
             color: white;
-            box-shadow: 0 0 20px #3498db;
-            transform: scale(1.1);
+            box-shadow: 0 0 15px #3498db;
+            transform: translateY(-3px);
         }
     </style>
 </head>
@@ -65,21 +64,33 @@
 
     <div class="container">
         <h1>Cavaleiro da Lua</h1>
-        
-        <p>Marc Spector é um mercenário com transtorno dissociativo de identidade que se torna o avatar do deus egípcio Khonshu.</p>
-        
-        <img src="https://image.api.playstation.com" alt="Cavaleiro da Lua sob o luar">
+        <p>O vigilante mais complexo da Marvel Comics.</p>
 
-        <h3>Personalidades:</h3>
-        <ul>
-            <li>Marc Spector (Mercenário)</li>
-            <li>Steven Grant (O pacato funcionário)</li>
-            <li>Jake Lockley (A personalidade sombria)</li>
-        </ul>
+        <!-- Seção: Primeira Aparição -->
+        <div class="card">
+            <h2>Primeira Aparição</h2>
+            <p>Sua estreia ocorreu em <strong>Werewolf by Night #32 (1975)</strong>. Criado como um vilão temporário, o design marcante de prata e branco rapidamente o tornou um favorito dos fãs.</p>
+            <center>
+                <img src="https://m.media-amazon.com" alt="Capa da primeira HQ - Werewolf by Night 32">
+            </center>
+        </div>
 
-        <br>
-        <a href="https://www.marvel.com" target="_blank" class="btn-moon">Ver Perfil na Marvel</a>
+        <!-- Seção: História Recomendada -->
+        <div class="card">
+            <h2>HQ Recomendada: O Lunático</h2>
+            <p>Escrita por Jeff Lemire, esta saga questiona a sanidade de Marc Spector. Ele acorda em um hospício onde lhe dizem que sua vida inteira como herói foi uma alucinação.</p>
+            <ul>
+                <li><strong>Gênero:</strong> Terror Psicológico / Super-Herói</li>
+                <li><strong>Destaque:</strong> Arte incrível que muda conforme a personalidade ativa.</li>
+            </ul>
+        </div>
+
+        <!-- Botão Final -->
+        <a href="https://www.marvel.com" target="_blank" class="btn-moon">Explorar HQs Oficiais</a>
     </div>
 
 </body>
 </html>
+
+
+
